@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,10 +9,12 @@ import { BbfooterComponent } from './bbfooter/bbfooter.component';
 import { BbdirectiviesComponent } from './bbdirectivies/bbdirectivies.component';
 import { BbheaderComponent } from './bbheader/bbheader.component';
 import { BbstudentsComponent } from './bbstudents/bbstudents.component';
+import { BbbikesComponent } from './bbbikes/bbbikes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BbbikesComponent,
     BbbodyComponent,
     BbfooterComponent,
     BbdirectiviesComponent,
@@ -22,7 +24,7 @@ import { BbstudentsComponent } from './bbstudents/bbstudents.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

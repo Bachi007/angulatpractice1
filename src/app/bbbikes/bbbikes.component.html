@@ -1,0 +1,19 @@
+<form class="form">
+    <label>Enter username</label>
+    <input type="text" class="form-control">
+    <label>Select Company </label>
+    <select class="form-control" [(ngModel)]="selectedCompany" name="selectedCompany">
+        <option *ngFor="let bike of bikelist" [value]="bike.company">{{bike.company}}</option>
+    </select>
+</form>
+
+<div [ngSwitch]="selectedCompany">
+    <div *ngSwitchCase="'BMW'">Best Bike in BMW is R1250GSA</div>
+    <div *ngSwitchCase="'Honda'">Best Bike in Honda is African Twin</div>
+    <div *ngSwitchCase="'Triumph'">Best Bike in Triumph is Tiger800</div>
+    <div *ngSwitchCase="'Ducati'">Best Bike in Ducati is Multistarda</div>
+    <div *ngSwitchDefault>Wrong selection</div>
+</div>
+
+
+<label>Selected company:{{selectedCompany}}</label>
