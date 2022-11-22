@@ -1,0 +1,17 @@
+<!-- <div *ngIf="num%2==0; else elseblock">
+<p class="even" >{{num}} is even number</p>
+</div>
+<ng-template #elseblock>
+<p class="odd">{{num}} is odd number</p>
+</ng-template> -->
+
+<div *ngFor="let num of nums">
+    <div *ngIf="num%2==0; else elseblock">
+        <div *ngIf="num>20">
+            <p class="even">{{num}} is even number</p>
+        </div>
+    </div>
+    <ng-template #elseblock>
+        <p class="odd">{{num}} is odd number</p>
+    </ng-template>
+</div>

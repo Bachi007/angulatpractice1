@@ -1,0 +1,17 @@
+.even{
+    color:blueviolet;
+    font-size: larger;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+.odd{
+    color:blue;
+    font-size: larger;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+p::first-letter{
+    color:red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
