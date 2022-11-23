@@ -10,6 +10,8 @@ import { BbdirectiviesComponent } from './bbdirectivies/bbdirectivies.component'
 import { BbheaderComponent } from './bbheader/bbheader.component';
 import { BbstudentsComponent } from './bbstudents/bbstudents.component';
 import { BbbikesComponent } from './bbbikes/bbbikes.component';
+import { BbevenoddComponent } from './bbevenodd/bbevenodd.component';
+import { highlightme } from './highlightme';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BbbikesComponent } from './bbbikes/bbbikes.component';
     BbfooterComponent,
     BbdirectiviesComponent,
     BbheaderComponent,
-    BbstudentsComponent
+    BbstudentsComponent,
+    BbevenoddComponent,
+    highlightme
   ],
   imports: [
     BrowserModule,
